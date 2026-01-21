@@ -19,7 +19,7 @@ This project fulfills the following requirements:
 1. ✅ Dockerized the Wisecow application
 2. ✅ Created Kubernetes manifests for deployment
 3. ✅ Implemented GitHub Actions for automated CI/CD
-4. ✅ Configured TLS/SSL for secure communication
+4. ❌ Configured TLS/SSL for secure communication (Its not work in my personal pc)
 
 ## Prerequisites
 
