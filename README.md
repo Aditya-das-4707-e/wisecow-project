@@ -50,21 +50,21 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 ## Project Structure
 
 ```
-wisecow-project/
+WISECOW-PROJECT/
 ├── .github/
 │   └── workflows/
-│       └── docker-image.yml          # GitHub Actions workflow
+│       └── docker-image.yml          # GitHub Actions workflow for CI/CD
+├── tls/
+│   ├── wisecow.crt                   # TLS certificate file
+│   └── wisecow.key                   # TLS private key file
 ├── wisecow-k8s/
-│   ├── deployment.yaml               # Kubernetes Deployment manifest
-│   ├── service.yaml                  # Kubernetes Service manifest
-│   ├── ingress.yaml                  # Kubernetes Ingress for TLS (optional)
-│   └── tls-secret.yaml               # TLS certificate secret (optional)
-├── wisecow.sh                        # Main application script
-├── Dockerfile                        # Docker configuration
-├── tls.crt                           # TLS certificate
-├── tls.key                           # TLS private key
-├── LICENSE
-└── README.md
+│   ├── deployment.yml                # Kubernetes Deployment manifest
+│   ├── ingress.yml                   # Kubernetes Ingress configuration
+│   └── service.yml                   # Kubernetes Service manifest
+├── Dockerfile                        # Docker image configuration
+├── LICENSE                           # Apache 2.0 License
+├── README.md                         # Project documentation
+└── wisecow.sh                        # Main application script
 ```
 
 ## Implementation Steps
